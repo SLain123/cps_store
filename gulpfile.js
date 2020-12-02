@@ -18,7 +18,7 @@ const concat = require(`gulp-concat`);
 const fileinclude = require(`gulp-file-include`);
 
 gulp.task(`html`, function () {
-  return gulp.src([`source/html/*.html`])
+  return gulp.src([`source/*.html`])
     .pipe(fileinclude({
       prefix: `@@`,
       basepath: `@root`,
