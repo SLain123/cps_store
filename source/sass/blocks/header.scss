@@ -1,0 +1,68 @@
+.header {
+    background-color: $white;
+    display: flex;
+    min-height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 10px $black;
+    border-bottom: 1px solid $blue-border;
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__logo-pic
+
+    &__logo-pic {
+    }
+
+    // .header__submenu
+
+    &__submenu {
+        display: none;
+    }
+
+    // .header__submenu-btn
+
+    &__submenu-btn {
+    }
+
+    // .header__submenu-pic
+
+    &__submenu-pic {
+    }
+
+    // .header__extramenu
+
+    &__extramenu {
+        margin-right: 8px;
+    }
+
+    // .header__exstramenu-btn
+
+    &__exstramenu-btn {
+    }
+
+    // .header__exstramenu-text
+
+    &__exstramenu-text {
+        display: none;
+    }
+
+    // .header__exstramenu-pic
+
+    &__exstramenu-pic {
+    }
+
+    // Модификаторы 
+
+    // header__btn_clean-standart
+
+    &__btn_clean-standart {
+        border: none;
+        background-color: $transparent;
+        cursor: pointer;
+        padding: 0 8px;
+    }
+}

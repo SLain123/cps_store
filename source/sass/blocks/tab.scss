@@ -1,0 +1,65 @@
+.tab {
+
+    // .tab__container
+
+    &__container {
+    }
+
+    // .tab__slidemenu
+
+    &__slidemenu {
+        overflow-y: scroll;
+        display: flex;
+        height: 40px;
+        margin: 0 16px;
+    }
+
+    // .tab__slidemenu-btn
+
+    &__slidemenu-btn {
+        color: $grey;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        height: 40px;
+        padding: 8px 16px;
+        white-space: nowrap;
+        background-color: $transparent;
+        border: none;
+
+        // .tab__slidemenu-btn_active
+
+        &_active {
+            background-color: $white;
+            border: 1px solid $blue-border;
+            border-radius: 3px;
+        }
+    }
+
+    
+
+    // .tab__content-item
+
+    &__content-item {
+    }
+
+    // .tab__text
+
+    &__text {
+    }
+
+    // .tab__link-block
+
+    &__link-block {
+    }
+
+    // .tab__next-link
+
+    &__next-link {
+    }
+
+    // .tab__pic
+
+    &__pic {
+    }
+}
