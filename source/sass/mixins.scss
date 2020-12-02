@@ -1,0 +1,31 @@
+//main style.scss
+
+@mixin w-1366 {
+    @media (max-width: $mon) {
+      @content;
+    }
+  }
+  
+  @mixin w-1024 {
+    @media (max-width: $s-mon) {
+      @content;
+    }
+  }
+  
+  @mixin w-768 {
+    @media (max-width: $tb) {
+      @content;
+    }
+  }
+  
+  @mixin w-320 {
+    @media (max-width: $mob) {
+      @content;
+    }
+  }
+  
+  @mixin retina {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      @content;
+    }
+  }

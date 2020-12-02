@@ -1,0 +1,38 @@
+// main: style.scss
+
+//colors
+$black: #484848;
+$blue: #1fc0fc;
+$yellow: #ffc341;
+$grad: linear-gradient(108.42deg, #ffc341 0%, #ffd701 96%);
+$white: #ffffff;
+$overlay: rgba(235, 235, 235, 0.95);
+$grey: #e3e3e3;
+$red: red;
+$transparent: rgba(0, 0, 0, 0);
+
+//fonts
+$rale: "Raleway", "Arial", "sans-serif";
+$sans: "FiraSans", "Arial", "sans-serif";
+$mont: "Montserrat", "Arial", "sans-serif";
+
+//viewports
+
+$mon: 1365px;
+$s-mon: 1024px;
+$tb: 768px;
+$mob: 320px;
+
+// retina
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// timers
+
+
+// Animation
+$t-anim: 0.3s;
+
+$default-transition-settings:       0.3s ease;
+$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
