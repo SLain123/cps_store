@@ -1,19 +1,19 @@
 //main style.scss
 
 @mixin w-1366 {
-    @media (max-width: $mon) {
+    @media (min-width: $mon) {
       @content;
     }
   }
   
-  @mixin w-1024 {
-    @media (max-width: $s-mon) {
+  @mixin w-1120 {
+    @media (min-width: $s-mon) {
       @content;
     }
   }
   
   @mixin w-768 {
-    @media (max-width: $tb) {
+    @media (min-width: $tb) {
       @content;
     }
   }

@@ -2,14 +2,28 @@
     background-color: $white;
     display: flex;
     min-height: 88px;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 10px $black;
     border-bottom: 1px solid $blue-border;
 
+    @include w-1120 {
+        background-color: $transparent;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-height: 0;
+    }
+
     // .header__logo
 
     &__logo {
+        margin-left: 8px;
+
+        @include w-1120 {
+            display: none;
+        }
     }
 
     // .header__logo-pic
@@ -21,6 +35,16 @@
 
     &__submenu {
         display: none;
+
+        @include w-768 {
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+        }
+
+        @include w-1120 {
+            display: none;
+        }
     }
 
     // .header__submenu-btn
@@ -39,6 +63,7 @@
         margin-right: 8px;
         display: flex;
         align-items: center;
+        margin-left: auto;
 
         &::before {
             content: '';
@@ -46,18 +71,41 @@
             height: 30px;
             background-color: $light-grey;
             margin: 0 12px;
+
+            @include w-1120 {
+                display: none;
+            }
+        }
+
+        @include w-768 {
+            margin-left: 0;
+            margin-right: 16px;
         }
     }
 
     // .header__exstramenu-btn
 
     &__exstramenu-btn {
+
+        @include w-1120 {
+            display: flex;
+            align-items: center;
+        }
     }
 
     // .header__exstramenu-text
 
     &__exstramenu-text {
         display: none;
+        font-weight: 500;
+
+        @include w-1120 {
+            display: inline;
+        }
+
+        @include w-1120 {
+           margin-right: 8px;
+        }
     }
 
     // .header__exstramenu-pic
@@ -73,6 +121,23 @@
         border: none;
         background-color: $transparent;
         cursor: pointer;
-        padding: 0 8px;
+        padding: 8px;
+        opacity: .9;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:focus {
+            outline: none;
+            border: 1px solid $black;
+            border-radius: 100%;
+        }
+
+        @include w-1120 {
+            &:focus {
+                border-radius: 5px;
+            }
+        }
     }
 }

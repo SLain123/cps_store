@@ -1,0 +1,10 @@
+// main: style.sccs
+
+.container {
+
+    @include w-1120 {
+        margin: 16px auto;
+        position: relative;
+        max-width: 1120px;
+    }
+}
