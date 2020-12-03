@@ -37,6 +37,16 @@
 
     &__extramenu {
         margin-right: 8px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            padding: 1px;
+            height: 30px;
+            background-color: $light-grey;
+            margin: 0 12px;
+        }
     }
 
     // .header__exstramenu-btn
