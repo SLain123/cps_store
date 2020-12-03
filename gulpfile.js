@@ -16,6 +16,12 @@ const webpackStream = require(`webpack-stream`);
 const webpackConfig = require(`./webpack.config.js`);
 const concat = require(`gulp-concat`);
 const fileinclude = require(`gulp-file-include`);
+const ghPages = require('gulp-gh-pages');
+ 
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task(`html`, function () {
   return gulp.src([`source/*.html`])

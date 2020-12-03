@@ -94,6 +94,10 @@
             line-height: 20px;
             margin-bottom: 20px;
         }
+
+        @include w-1120 {
+            max-height: 295px;
+        }
     }
 
     // .tab__link
