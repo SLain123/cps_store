@@ -3,69 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Учебный проект">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>CPS</title>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="menu">
-                <button type="button" class="menu__open-btn header__btn_clean-standart">
-                    <img width="40" height="40" src="./img/icon/burger.svg" alt="Кнопка открытия меню" class="menu__open-btn-pic">
-                </button>
-            </div>
-            <div class="header__logo">
-                <img width="96" height="50" src="./img/icon/logo.svg" alt="Логотип" class="header__logo-pic">
-            </div>
-            <div class="header__submenu">
-                <button type="button" class="header__submenu-btn header__btn_clean-standart">
-                    <img width="40" height="40" src="./img/icon/call.svg" alt="Позвоните нам" class="header__submenu-pic">
-                </button>
-                <button type="button" class="header__submenu-btn header__btn_clean-standart">
-                    <img width="40" height="40" src="./img/icon/chat.svg" alt="Напишите нам" class="header__submenu-pic">
-                </button>
-                <button type="button" class="header__submenu-btn header__btn_clean-standart">
-                    <img width="40" height="40" src="./img/icon/profile.svg" alt="Открыть профиль" class="header__submenu-pic">
-                </button>
-            </div>
-            <div class="header__extramenu">
-                <button type="button" class="header__exstramenu-btn header__btn_clean-standart">
-                    <span class="header__exstramenu-text">Оставить заявку</span>
-                    <img width="40" height="40" src="./img/icon/repair.svg" alt="Узнать статус ремонта" class="header__exstramenu-pic">
-                </button>
-                <button type="button" class="header__exstramenu-btn header__btn_clean-standart">
-                    <span class="header__exstramenu-text">Статус ремонта</span>
-                    <img width="40" height="40" src="./img/icon/checkstatus.svg" alt="Оставить заявку на ремонт" class="header__exstramenu-pic">
-                </button>
-            </div>
-        </header>
+        @@include("source/html/header.html")
         <main>
-            <section class="first-b">
-                <h1 class="visually-hidden">Компания CPS</h1>
-                <h2 class="first-b__title">Услуги и сервисы</h2>
-                <div class="tab tab__container">
-                    <div class="tab__slidemenu">
-                        <button type="button" class="tab__slidemenu-btn tab__slidemenu-btn_active">Ремонтируемые бренды</button>
-                        <button type="button" class="tab__slidemenu-btn">Ремонтируемые устройства</button>
-                        <button type="button" class="tab__slidemenu-btn">Цены на услуги</button>
-                        <button type="button" class="tab__slidemenu-btn">Адреса сервисных центров</button>
-                        <button type="button" class="tab__slidemenu-btn">Специальные цены</button>
-                        <button type="button" class="tab__slidemenu-btn">Отзывы</button>
-                    </div>
-                    <div class="tab__content-item">
-                        <div class="tab__common-text">
-                            <div class="tab__text">
-                                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                            </div>
-                            <a href="#" class="tab__link">
-                                <span class="tab__link-text">Читать далее</span>
-                            </a>
-                        </div>
-                        <img width="530" height="307" src="./img/pic/header_pic.jpg" alt="Фото логотипа компании" class="tab__pic">
-                    </div>
-                </div>
-            </section>
+            @@include("source/html/first-b.html")
         </main>
     </div>
     <script src="./js/main.min.js"></script>

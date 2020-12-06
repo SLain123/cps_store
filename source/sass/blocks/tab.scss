@@ -148,9 +148,15 @@
 
     &__pic {
         margin: 0 auto;
+        max-width: 530px;
 
         @include w-768 {
-            width: 50%;
+            min-width: 50%;
+        }
+    }
+
+    &__pic-img {
+        @include w-768 {
             border-radius: 6px;
         }
     }

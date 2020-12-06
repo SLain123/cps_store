@@ -7,4 +7,14 @@
         position: relative;
         max-width: 1120px;
     }
+
+    // .container__header
+
+    &__header {
+        @include w-1120 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
 }
