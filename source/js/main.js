@@ -1,4 +1,5 @@
-import {polyfills} from "./utils/polyfills";
+import { polyfills } from './utils/polyfills';
+import burger from './modules/burger-menu';
 
 // Utils
 // ---------------------------------
@@ -8,4 +9,4 @@ polyfills();
 // Modules
 // ----------------------------------
 
-console.log('Works!');
+burger();

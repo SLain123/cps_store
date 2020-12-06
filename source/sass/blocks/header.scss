@@ -5,6 +5,9 @@
     align-items: center;
     box-shadow: 0 1px 10px $black;
     border-bottom: 1px solid $blue-border;
+    position: relative;
+    padding: 16px 0;
+    flex-flow: wrap;
 
     @include w-1120 {
         background-color: $transparent;
@@ -16,8 +19,6 @@
     // .header__logo
 
     &__logo {
-        margin-left: 8px;
-
         @include w-1120 {
             display: none;
         }
@@ -34,7 +35,6 @@
         display: none;
 
         @include w-768 {
-            display: flex;
             margin-left: auto;
             align-items: center;
         }
@@ -110,6 +110,24 @@
     &__exstramenu-pic {
     }
 
+    // .header__search
+
+    &__search {
+        display: none;
+        margin-left: auto;
+        margin-right: 8px;
+        position: absolute;
+        top: 16px;
+        right: 0;
+    }
+
+    // .header__search-btn
+
+    &__search-btn {
+
+    }
+
+    // ============================================================
     // Модификаторы 
 
     // header__btn_clean-standart
@@ -136,5 +154,30 @@
                 border-radius: 5px;
             }
         }
+    }
+
+    // .header__extramenu_active_false
+
+    &__extramenu_active_false {
+        display: none;
+    }
+    
+    //.header__search_active
+
+    &__search_active {
+        display: block;
+    }
+
+    // .header__submenu_active_false
+
+    &__submenu_active_false {
+        display: none;
+    }
+
+    // .header_with-active-menu
+
+    &_with-active-menu {
+        box-shadow: none;
+        border: none;
     }
 }
