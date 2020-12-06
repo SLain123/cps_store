@@ -1,28 +1,20 @@
 const burger = () => {
-    const header = document.querySelector('.header');
-    const burgerMenuBlock = document.querySelector('.menu__block');
-    const openBurgerBtn = document.querySelector('.menu__open-btn');
-    const openBurgerBtnIcon = document.querySelector('.menu__open-btn-pic');
-    const extraMenuBlock = document.querySelector('.header__extramenu');
-    const searchBlock = document.querySelector('.header__search');
-    const subMenu = document.querySelector('.header__submenu');
+    const burgerMenu = document.querySelector('.menu');
+    const openBurgerBtn = document.querySelector('.header__open-burger-btn');
+    const closeBurgerBtn = document.querySelector('.menu__close-burger');
 
     openBurgerBtn.addEventListener('click', () => {
-        if(!burgerMenuBlock.classList.contains('menu__block_active')) {
-            burgerMenuBlock.classList.add('menu__block_active');
-            extraMenuBlock.classList.add('header__extramenu_active_false');
-            searchBlock.classList.add('header__search_active');       
-            header.classList.add('header_with-active-menu');
-            // subMenu.classList.add('header__submenu_active_false');
-            openBurgerBtnIcon.src = './img/icon/close-burger.svg';
-        } else {
-            burgerMenuBlock.classList.remove('menu__block_active');
-            extraMenuBlock.classList.remove('header__extramenu_active_false');
-            searchBlock.classList.remove('header__search_active');
-            header.classList.remove('header_with-active-menu');
-            // subMenu.classList.remove('header__submenu_active_false');
-            openBurgerBtnIcon.src = './img/icon/burger.svg';
-        }
+        burgerMenu.classList.remove('menu_active_false');
+        burgerMenu.classList.add('menu_open');
+    })
+
+    closeBurgerBtn.addEventListener('click', () => {
+        burgerMenu.classList.remove('menu_open');
+        burgerMenu.classList.add('menu_close');
+        setTimeout(() => { 
+            burgerMenu.classList.add('menu_active_false');
+            burgerMenu.classList.remove('menu_close')
+        }, 650)
     })
 }
 

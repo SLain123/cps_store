@@ -1,13 +1,17 @@
 .menu {
-    width: 100%;
     height: 100vh;
     min-height: 676px;
     max-width: 360px;
     background-color: $white;
     padding: 16px 0;
-    display: flex;
     flex-flow: column;
     justify-content: space-between;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    z-index: 1;
+
+    @include w-768 {
+        max-width: 320px;
+    }
 
     // .menu__head
 
@@ -162,6 +166,7 @@
         &:hover {
             opacity: .9;
         }
+    }
 
     // .menu__search
 
@@ -176,42 +181,36 @@
     // .menu__search-btn
 
     &__search-btn {
-
-    }
     }
 
     //==================================================
     // Модификаторы:
 
-    // .menu_active 
+    // .menu_open 
 
-    &_active {
-        background-color: $white;
-        padding: 16px 0;
-        position: absolute;
-        top: 0;
-
-    @include w-768 {
-        width: 320px;
-        height: 100vh;
-    }
+    &_open {
+        width: 100%;
+        display: flex;
+        animation: open-menu-anim .6s linear;
     }
 
-     // .menu__block_active
+    // .menu_close
 
-    &__block_active {
-        display: block;
-        animation: animate-opasity ease 1s;
+    &_close {
+        animation: close-menu-anim .8s ease;
+        display: flex;
     }
 
-    // .menu__contatcs_active
+    // .menu_active_false
 
-    &__contatcs_active {
+    &_active_false {
+        display: none;
+        width: 0;
     }
 
     // .menu__link_active
 
-    &__link_active {
+    &__link_open {
         color: $grey;
         margin: 0;
 
@@ -240,11 +239,36 @@
     }
 }
 
-@keyframes animate-opasity {
-    from {
-        opacity: 0;
+@keyframes open-menu-anim {
+    0% {
+        display: none;
+        width: 0;
     }
-    to {
-        opacity: 1;
+
+    10% {
+        display: flex;
+    }
+    
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes close-menu-anim {
+    0% {
+        width: 100%;
+        display: flex;
+    }
+
+    1% {
+        width: 95%;
+    }
+
+    95% {
+        width: 0;
+    }
+
+    100% {
+        display: none;
     }
 }
