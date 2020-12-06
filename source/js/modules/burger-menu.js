@@ -5,6 +5,7 @@ const burger = () => {
     const openBurgerBtnIcon = document.querySelector('.menu__open-btn-pic');
     const extraMenuBlock = document.querySelector('.header__extramenu');
     const searchBlock = document.querySelector('.header__search');
+    const subMenu = document.querySelector('.header__submenu');
 
     openBurgerBtn.addEventListener('click', () => {
         if(!burgerMenuBlock.classList.contains('menu__block_active')) {
@@ -12,12 +13,14 @@ const burger = () => {
             extraMenuBlock.classList.add('header__extramenu_active_false');
             searchBlock.classList.add('header__search_active');       
             header.classList.add('header_with-active-menu');
+            // subMenu.classList.add('header__submenu_active_false');
             openBurgerBtnIcon.src = './img/icon/close-burger.svg';
         } else {
             burgerMenuBlock.classList.remove('menu__block_active');
             extraMenuBlock.classList.remove('header__extramenu_active_false');
             searchBlock.classList.remove('header__search_active');
             header.classList.remove('header_with-active-menu');
+            // subMenu.classList.remove('header__submenu_active_false');
             openBurgerBtnIcon.src = './img/icon/burger.svg';
         }
     })

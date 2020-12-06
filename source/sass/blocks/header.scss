@@ -1,5 +1,5 @@
 .header {
-    background-color: $white;
+    background-color: $transparent;
     display: flex;
     min-height: 88px;
     align-items: center;
@@ -29,13 +29,30 @@
     &__logo-pic {
     }
 
+    // .header__right-menu-block
+
+    &__right-menu-block {
+        margin-left: auto;
+        display: flex;
+        @include w-768 {
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    // .header__left-menu-block
+
+    &__left-menu-block {
+        display: flex;
+    }
+
     // .header__submenu
 
     &__submenu {
         display: none;
 
         @include w-768 {
-            margin-left: auto;
+            display: flex;
             align-items: center;
         }
 
@@ -114,7 +131,6 @@
 
     &__search {
         display: none;
-        margin-left: auto;
         margin-right: 8px;
         position: absolute;
         top: 16px;
@@ -179,5 +195,9 @@
     &_with-active-menu {
         box-shadow: none;
         border: none;
+        z-index: 1;
+
+        @include w-768 {
+        }
     }
 }

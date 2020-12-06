@@ -4,6 +4,7 @@
     &__open {
         display: flex;
         align-items: center;
+        z-index: 2;
     }
 
     &::after {
@@ -155,6 +156,20 @@
 
     //==================================================
     // Модификаторы:
+
+    // .menu_active 
+
+    &_active {
+        background-color: $white;
+        padding: 16px 0;
+        position: absolute;
+        top: 0;
+
+    @include w-768 {
+        width: 320px;
+        height: 100vh;
+    }
+    }
 
      // .menu__block_active
 
