@@ -1,0 +1,32 @@
+// main ../style.scss
+
+// .btn 
+
+.btn {
+
+    // .btn_clean-standart
+
+    &_clean-standart {
+        border: none;
+        background-color: $transparent;
+        cursor: pointer;
+        padding: 8px;
+        opacity: .9;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:focus {
+            outline: none;
+            border: 1px solid $black;
+            border-radius: 100%;
+        }
+
+        @include w-1120 {
+            &:focus {
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -5,15 +5,59 @@
     align-items: center;
     box-shadow: 0 1px 10px $black;
     border-bottom: 1px solid $blue-border;
-    position: relative;
-    padding: 16px 0;
-    flex-flow: wrap;
 
     @include w-1120 {
         background-color: $transparent;
         border: none;
         box-shadow: none;
         min-height: 0;
+    }
+
+    // header__open-burger
+
+    &__open-burger {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            padding: 1px;
+            width: 2px;
+            height: 30px;
+            background-color: $light-grey;
+            margin: 0 12px;
+            display: none;
+    
+            @include w-768 {
+                display: block;
+            }
+        }
+
+        @include w-1120 {
+            display: none;
+        }
+    }
+
+    // .header__open-btn
+
+    &__open-btn {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+
+        @include w-768 {
+            margin-right: 12px;
+            margin-left: 16px;
+        }
+
+        @include w-1120 {
+            display: none;
+        }
+    }
+
+    // .header__open-pic
+
+    &__open-pic {
     }
 
     // .header__logo
@@ -24,28 +68,6 @@
         }
     }
 
-    // .header__logo-pic
-
-    &__logo-pic {
-    }
-
-    // .header__right-menu-block
-
-    &__right-menu-block {
-        margin-left: auto;
-        display: flex;
-        @include w-768 {
-            position: absolute;
-            top: 0;
-        }
-    }
-
-    // .header__left-menu-block
-
-    &__left-menu-block {
-        display: flex;
-    }
-
     // .header__submenu
 
     &__submenu {
@@ -54,6 +76,7 @@
         @include w-768 {
             display: flex;
             align-items: center;
+            margin-left: auto;
         }
 
         @include w-1120 {
@@ -127,77 +150,7 @@
     &__exstramenu-pic {
     }
 
-    // .header__search
-
-    &__search {
-        display: none;
-        margin-right: 8px;
-        position: absolute;
-        top: 16px;
-        right: 0;
-    }
-
-    // .header__search-btn
-
-    &__search-btn {
-
-    }
-
     // ============================================================
     // Модификаторы 
-
-    // header__btn_clean-standart
-
-    &__btn_clean-standart {
-        border: none;
-        background-color: $transparent;
-        cursor: pointer;
-        padding: 8px;
-        opacity: .9;
-
-        &:hover {
-            opacity: 1;
-        }
-
-        &:focus {
-            outline: none;
-            border: 1px solid $black;
-            border-radius: 100%;
-        }
-
-        @include w-1120 {
-            &:focus {
-                border-radius: 5px;
-            }
-        }
-    }
-
-    // .header__extramenu_active_false
-
-    &__extramenu_active_false {
-        display: none;
-    }
     
-    //.header__search_active
-
-    &__search_active {
-        display: block;
-    }
-
-    // .header__submenu_active_false
-
-    &__submenu_active_false {
-        display: none;
-    }
-
-    // .header_with-active-menu
-
-    &_with-active-menu {
-        box-shadow: none;
-        border: none;
-        z-index: 1;
-
-        @include w-768 {
-        }
-    }
 }
