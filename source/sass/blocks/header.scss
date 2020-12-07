@@ -1,12 +1,12 @@
 .header {
-    background-color: $transparent;
+    background-color: $white;
     display: flex;
     min-height: 88px;
     align-items: center;
     box-shadow: 0 1px 10px $black;
     border-bottom: 1px solid $blue-border;
 
-    @include w-1120 {
+    @include w-1366 {
         background-color: $transparent;
         border: none;
         box-shadow: none;
@@ -33,7 +33,7 @@
             }
         }
 
-        @include w-1120 {
+        @include w-1366 {
             display: none;
         }
     }
@@ -50,7 +50,7 @@
             margin-left: 16px;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             display: none;
         }
     }
@@ -63,7 +63,7 @@
     // .header__logo
 
     &__logo {
-        @include w-1120 {
+        @include w-1366 {
             display: none;
         }
     }
@@ -79,7 +79,7 @@
             margin-left: auto;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             display: none;
         }
     }
@@ -109,7 +109,7 @@
             background-color: $light-grey;
             margin: 0 12px;
 
-            @include w-1120 {
+            @include w-1366 {
                 display: none;
             }
         }
@@ -124,7 +124,7 @@
 
     &__exstramenu-btn {
 
-        @include w-1120 {
+        @include w-1366 {
             display: flex;
             align-items: center;
         }
@@ -136,11 +136,11 @@
         display: none;
         font-weight: 500;
 
-        @include w-1120 {
+        @include w-1366 {
             display: inline;
         }
 
-        @include w-1120 {
+        @include w-1366 {
            margin-right: 8px;
         }
     }

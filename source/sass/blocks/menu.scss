@@ -1,6 +1,5 @@
 .menu {
     height: 100vh;
-    min-height: 676px;
     max-width: 360px;
     background-color: $white;
     padding: 16px 0;
@@ -8,9 +7,14 @@
     justify-content: space-between;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     z-index: 1;
+    overflow-y: auto;
 
     @include w-768 {
         max-width: 320px;
+    }
+
+    @include w-1366 {
+        box-shadow: none;
     }
 
     // .menu__head
@@ -37,6 +41,10 @@
     // .menu__close-burger
 
     &__close-burger {
+
+        @include w-1366 {
+            display: none;
+        }
     }
 
     // .menu__close-burger-btn
@@ -206,11 +214,16 @@
     &_active_false {
         display: none;
         width: 0;
+
+        @include w-1366 {
+            display: flex;
+            width: 320px;
+        }
     }
 
     // .menu__link_active
 
-    &__link_open {
+    &__link_active {
         color: $grey;
         margin: 0;
 
@@ -221,14 +234,6 @@
             background-color: $blue-main;
             border-radius: 0 15px 15px 0;
             margin-right: 20px;
-
-            @include w-768 {
-                margin-right: 20px;
-            }
-
-            @include w-1120 {
-                margin-right: 28px;
-            }
         }
     }
 

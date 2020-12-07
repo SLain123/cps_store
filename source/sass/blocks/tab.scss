@@ -9,7 +9,7 @@
             margin: 24px;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             margin: 32px;
         }
     }
@@ -26,7 +26,7 @@
             width: 0; 
         }
 
-        @include w-1120 {
+        @include w-1366 {
             max-width: 1040px;
             overflow-y: visible;
             flex-flow: wrap;
@@ -95,7 +95,7 @@
             margin-bottom: 20px;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             max-height: 295px;
         }
     }
@@ -111,7 +111,7 @@
     &__common-text {
         margin-right: 48px;
 
-        @include w-1120 {
+        @include w-1366 {
             margin-right: 36px;
         }
     }
