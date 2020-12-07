@@ -14,7 +14,7 @@ const burger = () => {
         setTimeout(() => { 
             burgerMenu.classList.add('menu_active_false');
             burgerMenu.classList.remove('menu_close')
-        }, 650)
+        }, 350)
     })
 }
 
