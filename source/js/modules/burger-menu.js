@@ -17,25 +17,23 @@ const burger = () => {
         burgerMenu.classList.remove('menu_active_false');
         burgerMenu.classList.add('menu_open');
         overlay.classList.add('overlay_active');
-    }
+    };
 
     const closeMenu = () => {
         burgerMenu.classList.remove('menu_open');
         burgerMenu.classList.add('menu_close');
-        setTimeout(() => { 
+        setTimeout(() => {
             body.style.paddingRight = '0px';
             body.classList.remove('no-scroll');
             burgerMenu.classList.add('menu_active_false');
             burgerMenu.classList.remove('menu_close');
             overlay.classList.remove('overlay_active');
-        }, 350)
-    }
+        }, 350);
+    };
 
     openBurgerBtn.addEventListener('click', openMenu);
 
     closeBurgerBtn.addEventListener('click', closeMenu);
-
-
-}
+};
 
 export default burger;
