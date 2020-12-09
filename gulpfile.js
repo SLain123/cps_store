@@ -153,12 +153,12 @@ gulp.task(`webp`, function () {
 });
 
 gulp.task(`imagemin`, function () {
-  return gulp.src(`build/img/**/*.{png,jpg}`)
+  return gulp.src(`source/img/**/*.{png,jpg}`)
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
       ]))
-      .pipe(gulp.dest(`build/img`));
+      .pipe(gulp.dest(`source/img`));
 });
 
 // для отправки заказчику неминифицированного js "для чтения"
