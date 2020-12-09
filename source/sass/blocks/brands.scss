@@ -1,7 +1,11 @@
 // main ../style.scss
 
 .brands {
-    height: 200px;
+    min-height: 196px;
+
+    @include w-768 {
+        min-height: 288px;
+    }
 
     // .brands__title-block
 
@@ -29,6 +33,13 @@
 
     &__content-block {
         height: 134px;
+
+        @include w-768 {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            transition: 1s ease;
+        }
     }
 
     // .brands__content-wrapper
@@ -37,19 +48,35 @@
         display: flex;
         align-items: center;
         height: 104px;
+
+        @include w-768 {
+            margin: 24px;
+            width: 100%;
+            height: 192px;
+            display: grid;
+            grid-template-columns: 31% 31% 31%;
+            grid-template-rows: 72px 72px;
+            grid-row-gap: 16px;
+            grid-column-gap: 24px;
+        }
     }
 
     // .brands__content-item
 
     &__content-item {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 0 16px;
         align-items: center;
         background: $white;
         border: 1px solid $light-grey;
         border-radius: 6px;
         height: 72px;
         min-width: 0;
+
+        @include w-768 {
+            width: 100%;
+        }
     }
 
     // .brands__pagination
@@ -60,6 +87,10 @@
         position: static;
         margin: auto;
         justify-content: space-between;
+
+        @include w-768 {
+            display: none;
+        }
     }
 
     // .brands__bullet
@@ -93,10 +124,24 @@
 
     &__expand-block {
         display: none;
+
+        @include w-768 {
+            display: block;
+        }
     }
 
     // .brands__expand-btn
 
     &__expand-btn {
+        margin-left: 24px;
+    }
+
+    // Модификаторы ==================================
+
+    // .brands__expand-btn_expand 
+
+    &__expand-btn_expand {
+        height: 380px;
+        
     }
 }

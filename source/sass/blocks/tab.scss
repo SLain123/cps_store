@@ -101,12 +101,7 @@
     // .tab__expand
 
     &__expand {
-        text-decoration: none;
-        border: none;
-        background-color: $transparent;
-        padding: 8px 10px;
         margin-bottom: 16px;
-        cursor: pointer;
     }
 
     // .tab__common-text
@@ -116,32 +111,6 @@
 
         @include w-1366 {
             margin-right: 36px;
-        }
-    }
-
-    // .tab__expand-text 
-
-    &__expand-text {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: $black;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        height: 24px;
-
-        &::before {
-            content: '';
-            height: 16px;
-            background-image: url('./../img/icon/link-arrow.svg');
-            background-repeat: no-repeat;
-            padding: 4px;
-            margin-right: 16px;
-        }
-
-        @include w-768 {
-            margin-bottom: 0;
         }
     }
 
