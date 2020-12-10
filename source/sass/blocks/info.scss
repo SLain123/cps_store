@@ -1,6 +1,6 @@
-.tab {
+.info {
 
-    // .tab__container
+    // .info__container
 
     &__container {
         margin: 16px;
@@ -14,7 +14,7 @@
         }
     }
 
-    // .tab__slidemenu
+    // .info__slidemenu
 
     &__slidemenu {
         overflow-y: scroll;
@@ -30,11 +30,11 @@
             max-width: 1040px;
             overflow-y: visible;
             flex-flow: wrap;
-
+            height: 86px;
         }
     }
 
-    // .tab__slidemenu-btn
+    // .info__slidemenu-btn
 
     &__slidemenu-btn {
         color: $grey;
@@ -42,28 +42,24 @@
         line-height: 24px;
         letter-spacing: -0.2px;
         height: 40px;
-        padding: 8px 16px;
+        padding: 7px 13px;
         white-space: nowrap;
         background-color: $transparent;
         border: none;
         cursor: pointer;
         opacity: .9;
+        margin: 1px;
 
         &:hover {
-            opacity: 1;
-        }
-
-        // .tab__slidemenu-btn_active
-
-        &_active {
             background-color: $white;
             border: 1px solid $blue-border;
             border-radius: 3px;
             opacity: 1;
+            margin: 0;
         }
     }
 
-    // .tab__content-item
+    // .info__content-item
 
     &__content-item {
 
@@ -73,7 +69,7 @@
         }
     }
 
-    // .tab__text
+    // .info__text
 
     &__text {
         font-size: 14px;
@@ -98,13 +94,13 @@
         }
     }
 
-    // .tab__expand
+    // .info__expand
 
     &__expand {
         margin-bottom: 16px;
     }
 
-    // .tab__common-text
+    // .info__common-text
 
     &__common-text {
         margin-right: 48px;
@@ -114,7 +110,7 @@
         }
     }
 
-    // .tab__pic
+    // .info__pic
 
     &__pic {
         margin: 0 auto;
