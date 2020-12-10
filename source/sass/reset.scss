@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   overflow: auto;
 
-  background-color: $main-bg;
+  background-color: $white;
 }
 
 img,
@@ -103,17 +103,4 @@ select,
 textarea,
 input:matches([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]) {
   appearance: none;
-}
-
-// visually-hidden
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }

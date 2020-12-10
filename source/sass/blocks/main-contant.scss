@@ -1,0 +1,13 @@
+// main ../style.scss
+
+.main-content {
+    @include w-1366 {
+        width: 1180px;
+    }
+
+    // .main-content__brands
+
+    &__brands {
+    }
+    
+}

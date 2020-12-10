@@ -1,6 +1,6 @@
-.tab {
+.info {
 
-    // .tab__container
+    // .info__container
 
     &__container {
         margin: 16px;
@@ -9,12 +9,12 @@
             margin: 24px;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             margin: 32px;
         }
     }
 
-    // .tab__slidemenu
+    // .info__slidemenu
 
     &__slidemenu {
         overflow-y: scroll;
@@ -26,15 +26,15 @@
             width: 0; 
         }
 
-        @include w-1120 {
+        @include w-1366 {
             max-width: 1040px;
             overflow-y: visible;
             flex-flow: wrap;
-
+            height: 86px;
         }
     }
 
-    // .tab__slidemenu-btn
+    // .info__slidemenu-btn
 
     &__slidemenu-btn {
         color: $grey;
@@ -42,30 +42,24 @@
         line-height: 24px;
         letter-spacing: -0.2px;
         height: 40px;
-        padding: 8px 16px;
+        padding: 7px 13px;
         white-space: nowrap;
         background-color: $transparent;
         border: none;
         cursor: pointer;
         opacity: .9;
+        margin: 1px;
 
         &:hover {
-            opacity: 1;
-        }
-
-        // .tab__slidemenu-btn_active
-
-        &_active {
             background-color: $white;
             border: 1px solid $blue-border;
             border-radius: 3px;
             opacity: 1;
+            margin: 0;
         }
     }
 
-    
-
-    // .tab__content-item
+    // .info__content-item
 
     &__content-item {
 
@@ -75,13 +69,13 @@
         }
     }
 
-    // .tab__text
+    // .info__text
 
     &__text {
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.2px;
-        max-height: 88px;
+        max-height: 104px;
         overflow-y: hidden;
         margin-bottom: 16px;
 
@@ -95,62 +89,40 @@
             margin-bottom: 20px;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             max-height: 295px;
         }
     }
 
-    // .tab__link
+    // .info__expand
 
-    &__link {
-        text-decoration: none;
+    &__expand {
+        margin-bottom: 16px;
     }
 
-    // .tab__common-text
+    // .info__common-text
 
     &__common-text {
         margin-right: 48px;
 
-        @include w-1120 {
+        @include w-1366 {
             margin-right: 36px;
         }
     }
 
-    // .tab__link-text 
-
-    &__link-text {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: $black;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        margin-left: 8px;
-        margin-bottom: 16px;
-        height: 24px;
-
-        &::before {
-            content: '';
-            height: 16px;
-            background-image: url('./../img/icon/link-arrow.svg');
-            background-repeat: no-repeat;
-            padding: 4px;
-            margin-right: 16px;
-        }
-
-        @include w-768 {
-            margin-bottom: 0;
-        }
-    }
-
-    // .tab__pic
+    // .info__pic
 
     &__pic {
         margin: 0 auto;
+        max-width: 530px;
 
         @include w-768 {
-            width: 50%;
+            min-width: 50%;
+        }
+    }
+
+    &__pic-img {
+        @include w-768 {
             border-radius: 6px;
         }
     }

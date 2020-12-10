@@ -1,6 +1,5 @@
-.first-b {
-
-    // .first-b__title
+.about {
+    // .about__title
 
     &__title {
         margin: 24px 0;
@@ -20,7 +19,7 @@
                 margin-right: 20px;
             }
 
-            @include w-1120 {
+            @include w-1366 {
                 margin-right: 28px;
             }
         }
@@ -30,3 +29,4 @@
         }
     }
 }
+

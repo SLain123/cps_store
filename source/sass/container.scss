@@ -1,10 +1,37 @@
 // main: style.sccs
 
 .container {
+    background-color: $main-bg;
+    padding-bottom: 20px;
 
-    @include w-1120 {
-        margin: 16px auto;
+    @include w-1366 {
+        margin: 0 auto;
         position: relative;
-        max-width: 1120px;
+        max-width: 1366px;
+        display: flex;
+    }
+
+    // .container__header
+
+    &__header {
+        @include w-1366 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    // .container__menu
+
+    &__menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include w-1366 {
+            position: relative;
+            right: 0;
+            top: 0;
+        }
     }
 }

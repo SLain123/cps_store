@@ -1,0 +1,27 @@
+// main ../style.scss
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.96);
+    display: none;
+    z-index: 9;
+
+    // .overlay_active
+
+    &_active {
+        display: block;
+    }
+}
+
+@keyframes animate-opasity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

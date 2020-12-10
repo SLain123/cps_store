@@ -1,5 +1,5 @@
 // Artem Lamzov
-// Created: 
+// Created: 02.12.20
 // Finished: 
 
 // Common styles
@@ -9,13 +9,20 @@
 @import "reset";
 @import "mixins";
 @import "container";
+@import "service";
+@import "./vendor/swiper";
 
 // main blocks
 
+@import "./blocks/btn";
+@import "./blocks/arrow-expand";
 @import "./blocks/header";
 @import "./blocks/menu";
-@import "./blocks/first-b";
-@import "./blocks/tab";
+@import "./blocks/overlay";
+@import "./blocks/main-contant";
+@import "./blocks/about";
+@import "./blocks/info";
+@import "./blocks/brands";
 
 // other
 

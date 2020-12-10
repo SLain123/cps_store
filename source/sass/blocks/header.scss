@@ -6,29 +6,66 @@
     box-shadow: 0 1px 10px $black;
     border-bottom: 1px solid $blue-border;
 
-    @include w-1120 {
+    @include w-1366 {
         background-color: $transparent;
         border: none;
         box-shadow: none;
-        position: absolute;
-        right: 0;
-        top: 0;
         min-height: 0;
+    }
+
+    // header__open-burger
+
+    &__open-burger {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: '';
+            padding: 1px;
+            width: 2px;
+            height: 30px;
+            background-color: $light-grey;
+            margin: 0 12px;
+            display: none;
+    
+            @include w-768 {
+                display: block;
+            }
+        }
+
+        @include w-1366 {
+            display: none;
+        }
+    }
+
+    // .header__open-btn
+
+    &__open-btn {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+
+        @include w-768 {
+            margin-right: 12px;
+            margin-left: 16px;
+        }
+
+        @include w-1366 {
+            display: none;
+        }
+    }
+
+    // .header__open-pic
+
+    &__open-pic {
     }
 
     // .header__logo
 
     &__logo {
-        margin-left: 8px;
-
-        @include w-1120 {
+        @include w-1366 {
             display: none;
         }
-    }
-
-    // .header__logo-pic
-
-    &__logo-pic {
     }
 
     // .header__submenu
@@ -38,11 +75,11 @@
 
         @include w-768 {
             display: flex;
-            margin-left: auto;
             align-items: center;
+            margin-left: auto;
         }
 
-        @include w-1120 {
+        @include w-1366 {
             display: none;
         }
     }
@@ -72,7 +109,7 @@
             background-color: $light-grey;
             margin: 0 12px;
 
-            @include w-1120 {
+            @include w-1366 {
                 display: none;
             }
         }
@@ -87,7 +124,7 @@
 
     &__exstramenu-btn {
 
-        @include w-1120 {
+        @include w-1366 {
             display: flex;
             align-items: center;
         }
@@ -99,11 +136,11 @@
         display: none;
         font-weight: 500;
 
-        @include w-1120 {
+        @include w-1366 {
             display: inline;
         }
 
-        @include w-1120 {
+        @include w-1366 {
            margin-right: 8px;
         }
     }
@@ -113,31 +150,7 @@
     &__exstramenu-pic {
     }
 
+    // ============================================================
     // Модификаторы 
-
-    // header__btn_clean-standart
-
-    &__btn_clean-standart {
-        border: none;
-        background-color: $transparent;
-        cursor: pointer;
-        padding: 8px;
-        opacity: .9;
-
-        &:hover {
-            opacity: 1;
-        }
-
-        &:focus {
-            outline: none;
-            border: 1px solid $black;
-            border-radius: 100%;
-        }
-
-        @include w-1120 {
-            &:focus {
-                border-radius: 5px;
-            }
-        }
-    }
+    
 }
