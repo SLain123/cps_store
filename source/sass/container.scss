@@ -1,7 +1,6 @@
 // main: style.sccs
 
 .container {
-    background-color: $main-bg;
     padding-bottom: 20px;
 
     @include w-1366 {

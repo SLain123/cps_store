@@ -1,6 +1,6 @@
 import { polyfills } from './utils/polyfills';
 import burger from './modules/burger-menu';
-import brandSlider from './modules/brands';
+import brandTypeSlider from './modules/brands&types';
 
 // Utils
 // ---------------------------------
@@ -11,4 +11,4 @@ polyfills();
 // ----------------------------------
 
 burger();
-brandSlider();
+brandTypeSlider();

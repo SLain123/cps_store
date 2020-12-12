@@ -1,6 +1,8 @@
 // main ../style.scss
 
 .main-content {
+    background-color: $main-bg;
+    
     @include w-1366 {
         width: 1180px;
     }
@@ -8,6 +10,11 @@
     // .main-content__brands
 
     &__brands {
+    }
+
+    // .main-content__types
+
+    &__types {
     }
     
 }

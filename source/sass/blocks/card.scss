@@ -1,13 +1,13 @@
 // main ../style.scss
 
-.brands {
+.card {
     min-height: 196px;
 
     @include w-768 {
         min-height: 288px;
     }
 
-    // .brands__title-block
+    // .card__title-block
 
     &__title-block {
         width: 100%;
@@ -24,7 +24,7 @@
         }
     }
 
-    // .brands__title-text
+    // .card__title-text
 
     &__title-text {
         color: $grey;
@@ -37,10 +37,11 @@
         display: inline;
     }
 
-    // .brands__content-block
+    // .card__content-block
 
     &__content-block {
-        height: 134px;
+        height: 144px;
+        margin-left: 16px;
 
         @include w-768 {
             height: 200px;
@@ -50,7 +51,7 @@
         }
     }
 
-    // .brands__content-wrapper
+    // .card__content-wrapper
 
     &__content-wrapper {
         display: flex;
@@ -75,7 +76,7 @@
         }
     }
 
-    // .brands__content-item
+    // .card__content-item
 
     &__content-item {
         display: flex;
@@ -93,7 +94,17 @@
         }
     }
 
-    // .brands__pagination
+    // .card__item-title
+
+    &__item-title {
+        margin: 16px 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+
+    // .card__pagination
 
     &__pagination {
         display: flex;
@@ -107,7 +118,7 @@
         }
     }
 
-    // .brands__bullet
+    // .card__bullet
 
     &__bullet {
         display: block;
@@ -118,18 +129,18 @@
         cursor: pointer;
     }
 
-    // .brands__bullet_active
+    // .card__bullet_active
 
     &__bullet_active {
         background-color: $grey-bullets-active;
     }
 
-    // .brands__item-logo
+    // .card__item-logo
 
     &__item-logo {
     }
 
-    // .brands__detail-btn
+    // .card__detail-btn
 
     &__detail-btn {
         opacity: .9;
@@ -145,7 +156,7 @@
         }
     }
 
-    // .brands__expand-block
+    // .card__expand-block
 
     &__expand-block {
         display: none;
@@ -155,7 +166,7 @@
         }
     }
 
-    // .brands__expand-btn
+    // .card__expand-btn
 
     &__expand-btn {
         margin-left: 24px;
@@ -163,7 +174,9 @@
 
     // Модификаторы ==================================
 
-    // .brands__expand-btn_expand 
+    //Разворот для блоков:
+
+    // .card__expand-btn_expand 
 
     &__expand-btn_expand {
         height: 370px;
@@ -171,5 +184,63 @@
         @include w-1120 {
             height: 290px;
         }
+    }
+
+    // .card__expand-btn_expand_wide
+
+    &__expand-btn_expand_wide {
+        height: 570px;
+        
+        @include w-1120 {
+            height: 380px;
+        }
+    }
+
+    // Модификаторы высоты и отступов
+
+    // .card__content-block_height_wide
+
+    &__content-block_height_wide {
+        min-height: 284px;
+
+        @include w-768 {
+            min-height: 0;
+        }
+    }
+
+    // .card__content-wrapper_height_wide
+
+    &__content-wrapper_height_wide {
+        height: 204px;
+
+        @include w-768 {
+            grid-template-rows: 160px;
+        }
+    }
+
+    // .card__content-item_height_wide
+
+    &__content-item_height_wide {
+        height: 160px;
+    }
+
+    // .card__content-item_flex_column
+
+    &__content-item_flex_column {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    // .card__detail-btn_margin_plus
+
+    &__detail-btn_margin_plus {
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    // .card__pagination_width_narrow
+
+    &__pagination_width_narrow {
+        max-width: 170px;
     }
 }
