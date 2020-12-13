@@ -48,6 +48,7 @@
             display: flex;
             justify-content: center;
             transition: 1s ease;
+            margin-left: 0;
         }
     }
 
@@ -201,7 +202,7 @@
     // .card__content-block_height_wide
 
     &__content-block_height_wide {
-        min-height: 284px;
+        min-height: 240px;
 
         @include w-768 {
             min-height: 0;
@@ -242,5 +243,11 @@
 
     &__pagination_width_narrow {
         max-width: 170px;
+    }
+
+    // .card__pagination_width_extra_narrow
+
+    &__pagination_width_extra_narrow {
+        max-width: 100px;
     }
 }
