@@ -19,10 +19,10 @@
         <img width="96" height="50" src="./img/icon/logo.svg" alt="Логотип" class="logo__pic">
     </div>
     <div class="header__submenu submenu">
-        <button aria-label="Позвонить нам" type="button" class="submenu__btn btn_clean-standart">
+        <button aria-label="Позвонить нам" type="button" class="submenu__btn btn_clean-standart call-btn">
             <img width="40" height="40" src="./img/icon/call.svg" alt="Позвоните нам" class="submenu__pic">
         </button>
-        <button aria-label="Написать нам" type="button" class="submenu__btn btn_clean-standart">
+        <button aria-label="Написать нам" type="button" class="submenu__btn btn_clean-standart feedback-btn">
             <img width="40" height="40" src="./img/icon/chat.svg" alt="Напишите нам" class="submenu__pic">
         </button>
         <button aria-label="Открыть профиль" type="button" class="submenu__btn btn_clean-standart">
@@ -45,14 +45,14 @@
         <div class="menu__first-line-block">
             <div class="menu__close-burger">
                 <button aria-label="Открыть меню" type="button" class="menu__close-burger-btn btn_clean-standart">
-                    <img width="40" height="40" src="./img/icon/close-burger.svg" alt="Кнопка открытия меню" class="menu__close-burger-pic">
+                    <img width="40" height="40" src="./img/icon/close-burger.svg" alt="" class="menu__close-burger-pic">
                 </button>
             </div>
             <div class="logo menu__logo">
                 <img width="96" height="50" src="./img/icon/logo.svg" alt="Логотип" class="logo__pic">
             </div>
             <button aria-label="Открыть строку происка" type="button" class="menu__search-btn btn_clean-standart">
-                <img width="40" height="40" src="./img/icon/search.svg" alt="Поиск" class="menu__search-pic">
+                <img width="40" height="40" src="./img/icon/search.svg" alt="" class="menu__search-pic">
             </button>
         </div>
         <ul class="menu__list">
@@ -84,10 +84,10 @@
     </div>
     <div class="menu__footer">
         <div class="submenu menu__submenu">
-            <button aria-label="Позвонить нам" type="button" class="submenu__btn btn_clean-standart">
+            <button aria-label="Позвонить нам" type="button" class="submenu__btn btn_clean-standart call-btn">
                 <img width="40" height="40" src="./img/icon/call.svg" alt="Позвоните нам" class="submenu__pic">
             </button>
-            <button aria-label="Написать нам" type="button" class="submenu__btnn btn_clean-standart">
+            <button aria-label="Написать нам" type="button" class="submenu__btnn btn_clean-standart feedback-btn">
                 <img width="40" height="40" src="./img/icon/chat.svg" alt="Напишите нам" class="submenu__pic">
             </button>
             <button aria-label="Открыть профиль" type="button" class="submenu__btn btn_clean-standart">
@@ -105,8 +105,9 @@
         </div>
     </div>
 </div>
-        <main class="main-content">
-            <section class="about">
+        <main>
+            <div class="main-content">
+                <section class="about">
     <h1 class="visually-hidden">Компания CPS</h1>
     <h2 class="about__title">Услуги и сервисы</h2>
     <div class="info">
@@ -140,143 +141,315 @@
         </div>
     </div>
 </section>
-            <section class="brands main-content__brands">
-    <div class="brands__title-block">
-        <h3 class="brands__title-text">Ремонт техники различных брендов</h3>
+                <section class="card main-content__brands">
+    <div class="card__title-block">
+        <h3 class="card__title-text">Ремонт техники различных брендов</h3>
     </div>
-    <div class="brands__content-block swiper-container">
-       <div class="brands__content-wrapper swiper-wrapper">
-        <div class="brands__content-item swiper-slide">
+    <div id="brands-content" class="card__content-block swiper-container">
+       <div class="card__content-wrapper swiper-wrapper">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 108px; 2x: 216px -->
                  <source type="image/webp" srcset="./img/brands/lenovo.webp 1x, ./img/brands/lenovo@2x.webp 2x" />
                  <img width="108" height="32" src="./img/brands/lenovo.jpg" srcset="img/brands/lenovo@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 232px; 2x: 216px -->
                  <source type="image/webp" srcset="./img/brands/samsung.webp 1x, ./img/brands/samsung@2x.webp 2x" />
                  <img width="116" height="39" src="./img/brands/samsung.jpg" srcset="img/brands/samsung@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 44px; 2x: 88px -->
                  <source type="image/webp" srcset="./img/brands/apple.webp 1x, ./img/brands/apple@2x.webp 2x" />
-                 <img width="44" height="44" src="./img/brands/apple.jpg" srcset="img/brands/apple@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="44" height="44" src="./img/brands/apple.jpg" srcset="img/brands/apple@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 128px; 2x: 256px -->
                  <source type="image/webp" srcset="./img/brands/bosch.webp 1x, ./img/brands/bosch@2x.webp 2x" />
-                 <img width="128" height="29" src="./img/brands/bosch.jpg" srcset="img/brands/bosch@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="128" height="29" src="./img/brands/bosch.jpg" srcset="img/brands/bosch@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 52px; 2x: 104px -->
                  <source type="image/webp" srcset="./img/brands/hp.webp 1x, ./img/brands/hp@2x.webp 2x" />
-                 <img width="52" height="52" src="./img/brands/hp.jpg" srcset="img/brands/hp@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="52" height="52" src="./img/brands/hp.jpg" srcset="img/brands/hp@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 94px; 2x: 188px -->
                  <source type="image/webp" srcset="./img/brands/acer.webp 1x, ./img/brands/acer@2x.webp 2x" />
-                 <img width="94" height="24" src="./img/brands/acer.jpg" srcset="img/brands/acer@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="94" height="24" src="./img/brands/acer.jpg" srcset="img/brands/acer@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 128px; 2x: 256px -->
                  <source type="image/webp" srcset="./img/brands/sonic.webp 1x, ./img/brands/sonic@2x.webp 2x" />
-                 <img width="128" height="21" src="./img/brands/sonic.jpg" srcset="img/brands/sonic@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="128" height="21" src="./img/brands/sonic.jpg" srcset="img/brands/sonic@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 128px; 2x: 256px -->
                  <source type="image/webp" srcset="./img/brands/sony.webp 1x, ./img/brands/sony@2x.webp 2x" />
-                 <img width="128" height="26" src="./img/brands/sony.jpg" srcset="img/brands/sony@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="128" height="26" src="./img/brands/sony.jpg" srcset="img/brands/sony@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 108px; 2x: 216px -->
                  <source type="image/webp" srcset="./img/brands/lenovo.webp 1x, ./img/brands/lenovo@2x.webp 2x" />
-                 <img width="108" height="32" src="./img/brands/lenovo.jpg" srcset="img/brands/lenovo@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="108" height="32" src="./img/brands/lenovo.jpg" srcset="img/brands/lenovo@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 44px; 2x: 88px -->
                  <source type="image/webp" srcset="./img/brands/apple.webp 1x, ./img/brands/apple@2x.webp 2x" />
-                 <img width="44" height="88" src="./img/brands/apple.jpg" srcset="img/brands/apple@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="44" height="88" src="./img/brands/apple.jpg" srcset="img/brands/apple@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
-        <div class="brands__content-item swiper-slide">
+        <div class="card__content-item swiper-slide">
             <picture>
                  <!-- 1х: 232px; 2x: 216px -->
                  <source type="image/webp" srcset="./img/brands/samsung.webp 1x, ./img/brands/samsung@2x.webp 2x" />
-                 <img width="116" height="39" src="./img/brands/samsung.jpg" srcset="img/brands/samsung@2x.jpg 2x" alt="Логотип бренда" class="brands__item-logo">
+                 <img width="116" height="39" src="./img/brands/samsung.jpg" srcset="img/brands/samsung@2x.jpg 2x" alt="Логотип бренда" class="card__item-logo">
             </picture>
-            <a href="#" aria-label="Перейти на страницу бренда" class="brands__detail-btn">
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn">
                 <img src="./img/icon/go.svg" alt="">
             </a>
         </div>
 
        </div>
-       <div class="brands__pagination swiper-pagination"></div>
+       <div class="card__pagination swiper-pagination"></div>
     </div>
-    <div class="brands__expand-block">
-        <button aria-label="Отобразить все бренды" type="button" class="arrow-expand brands__expand-btn btn__custome-focus">
-            <span class="brands__expand-text arrow-expand__text">Показать все</span>
+    <div class="card__expand-block">
+        <button aria-label="Отобразить все бренды" type="button" id="brands-exp-btn" class="arrow-expand card__expand-btn btn__custome-focus">
+            <span id="brands-exp-text" class="card__expand-text arrow-expand__text">Показать все</span>
         </button>
     </div>
 </section>
 
+                <section class="card main-content__types">
+    <div class="card__title-block">
+        <h3 class="card__title-text">Ремонт различных видов техники</h3>
+    </div>
+    <div id="types-content" class="card__content-block swiper-container card__content-block_height_wide">
+       <div class="card__content-wrapper swiper-wrapper card__content-wrapper_height_wide">
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт ноутбуков</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт планшетов</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт ПК</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт  мониторов</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт ноутбуков</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт планшетов</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт ПК</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_height_wide card__content-item_flex_column">
+            <span class="card__item-title">Ремонт  мониторов</span>
+            <a href="#" aria-label="Перейти на страницу бренда" class="card__detail-btn card__detail-btn_margin_plus">
+                <img src="./img/icon/go.svg" alt="">
+            </a>
+        </div>
+
+       </div>
+       <div class="card__pagination swiper-pagination card__pagination_width_narrow"></div>
+    </div>
+    <div class="card__expand-block">
+        <button aria-label="Отобразить все бренды" type="button" id="types-exp-btn" class="arrow-expand card__expand-btn btn__custome-focus">
+            <span id="types-exp-text" class="card__expand-text arrow-expand__text">Показать все</span>
+        </button>
+    </div>
+</section>
+                <section class="card price main-content__price">
+    <div class="card__title-block">
+        <h3 class="card__title-text">Цены на услуги</h3>
+    </div>
+    <div class="card__content-block swiper-container price__content-block">
+       <div class="card__content-wrapper swiper-wrapper price__content-wrapper">
+
+        <div class="card__content-item swiper-slide card__content-item_flex_column price__content-item">
+            <p class="price__item-name price__text-pattern">Диагностика</p>
+            <p class="price__item-price price__text-pattern ">Бесплатно</p>
+            <p class="price__item-term price__text-pattern">30 мин</p>
+            <button type="button" aria-label="Сделать заказ услуги" class="btn__order price__order-btn">
+                <span class="btn__order-text">Заказать</span>
+            </button>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_flex_column price__content-item">
+            <p class="price__item-name price__text-pattern price__text_hidden-on-mon-tab">Замена дисплея</p>
+            <p class="price__item-price price__text-pattern price__text_hidden-on-mon-tab">1 000 ₽</p>
+            <p class="price__item-term price__text-pattern price__text_hidden-on-mon-tab">30-120 мин</p>
+            <button type="button" aria-label="Сделать заказ услуги" class="btn__order price__order-btn">
+                <span class="btn__order-text">Заказать</span>
+            </button>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_flex_column price__content-item">
+            <p class="price__item-name price__text-pattern price__text_hidden-on-mon-tab">Замена полифонического динамика</p>
+            <p class="price__item-price price__text-pattern price__text_hidden-on-mon-tab">1 000 ₽</p>
+            <p class="price__item-term price__text-pattern price__text_hidden-on-mon-tab">30-120 мин</p>
+            <button type="button" aria-label="Сделать заказ услуги" class="btn__order price__order-btn">
+                <span class="btn__order-text">Заказать</span>
+            </button>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_flex_column price__content-item">
+            <p class="price__item-name price__text-pattern price__text_hidden-on-mon-tab">Тестирование с выдачей технического заключения</p>
+            <p class="price__item-price price__text-pattern price__text_hidden-on-mon-tab">1 000 ₽</p>
+            <p class="price__item-term price__text-pattern price__text_hidden-on-mon-tab">30-120 мин</p>
+            <button type="button" aria-label="Сделать заказ услуги" class="btn__order price__order-btn">
+                <span class="btn__order-text">Заказать</span>
+            </button>
+        </div>
+
+        <div class="card__content-item swiper-slide card__content-item_flex_column price__content-item">
+            <p class="price__item-name price__text-pattern price__text_hidden-on-mon-tab">Замена программного обеспечения</p>
+            <p class="price__item-price price__text-pattern price__text_hidden-on-mon-tab">1 000 ₽</p>
+            <p class="price__item-term price__text-pattern price__text_hidden-on-mon-tab">30-120 мин</p>
+            <button type="button" aria-label="Сделать заказ услуги" class="btn__order price__order-btn">
+                <span class="btn__order-text">Заказать</span>
+            </button>
+        </div>
+
+       </div>
+       <div class="card__pagination swiper-pagination card__pagination_width_extra_narrow"></div>
+    </div>
+    <div class="footnote">
+        <p class="footnote__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+        <a href="#" class="footnote__link">Получить коммерческое предложение</a>
+    </div>
+</section>
+            </div>
+        <footer class="footer">
+    <p class="footer__text footer__text_pre">© 2019 CPS
+Разработано командой Apesong </p>
+    <p class="footer__text">Политика конфиденциальности</p>
+    <p class="footer__text footer__text_text_to-right footer__text_width_wide">Информация, размещенная на данной странице, не является публичной офертой</p>
+</footer>
+        <div class="modal main-content__modal-feedback modal_active_false">
+    <button class="modal__close-btn btn_clean-standart modal__close-feedback" type="button" aria-label="Закрыть окно">
+        <img src="./img/icon/close-burger.svg" alt="" class="modal__close-pic">
+    </button>
+    <p class="modal__title">Обратная связь</p>
+    <form action="#" method="GET" class="modal__form">
+        <label class="visually-hidden" for="name">Имя</label>
+        <input type="text" name="name" id="name" placeholder="Имя">
+        <label class="visually-hidden" for="phone">Телефон</label>
+        <input type="text" name="phone" id="phone" placeholder="Телефон">
+        <label class="visually-hidden" for="mail">Электронная почта</label>
+        <input name="mail" type="text" id="mail" placeholder="Электронная почта">
+        <label class="visually-hidden" for="message">Сообщение</label>
+        <textarea name="message" placeholder="Сообщение" id="message"></textarea>
+        <p class="modal__agreement">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
+        <button type="submit" aria-label="Отправить форму" class="btn__order">
+            <span class="btn__order-text">Отправить</span>
+        </button>
+    </form>
+</div>
+        <div class="modal main-content__modal-call modal_active_false">
+    <button class="modal__close-btn btn_clean-standart modal__close-call" type="button" aria-label="Закрыть окно">
+        <img src="./img/icon/close-burger.svg" alt="" class="modal__close-pic">
+    </button>
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" method="GET" class="modal__form">
+        <label class="visually-hidden" for="phone">Телефон</label>
+        <input type="text" name="phone" id="phone" placeholder="Телефон">
+        <p class="modal__agreement">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
+        <button type="submit" aria-label="Отправить форму" class="btn__order">
+            <span class="btn__order-text">Отправить</span>
+        </button>
+    </form>
+</div>
         </main>
     </div>
     <div class="overlay"></div>
