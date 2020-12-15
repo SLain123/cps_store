@@ -152,54 +152,20 @@
     // .price__order-btn
 
     &__order-btn {
+        width: 110px;
         position: absolute;
         top: 77%;
         left: 48%;
-        width: 110px;
-        height: 32px;
-        background-color: $raspberry-bg;
-        border-radius: 16px;
-        cursor: pointer;
-        border: none;
-        opacity: .95;
-        display: flex;
-        align-items: center;
-        padding: 0 12px;
 
         @include w-768 {
             position: static;
-        }
-
-        &:hover{
-            opacity: 1;
-        }
-
-        &:focus {
-            border-radius: 16px;
-            box-shadow: 2px 2px 5px $grey, -2px 2px 5px $grey, 2px -2px 5px $grey, -2px -2px 5px $grey;
-            outline: none;
         }
     }
 
     // .price__order-text
 
     &__order-text {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.15px;
-        text-transform: uppercase;
-        color: $white;
-        position: relative;
-
-        &:after {
-            width: 24px;
-            height: 24px;
-            content: "";
-            position: absolute;
-            left: 110%;
-            background-image: url('../img/icon/goside.svg');
-        }
+        
     }
 
     // Модификаторы ==================================

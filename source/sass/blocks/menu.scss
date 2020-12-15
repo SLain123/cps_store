@@ -15,6 +15,7 @@
 
     @include w-1366 {
         box-shadow: none;
+        z-index: 1;
     }
 
     // .menu__head

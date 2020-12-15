@@ -1,5 +1,5 @@
 import { polyfills } from './utils/polyfills';
-import burger from './modules/burger-menu';
+import modalMenu from './modules/modalMenu';
 import brandTypeSlider from './modules/brands&types';
 
 // Utils
@@ -10,5 +10,5 @@ polyfills();
 // Modules
 // ----------------------------------
 
-burger();
+modalMenu();
 brandTypeSlider();
