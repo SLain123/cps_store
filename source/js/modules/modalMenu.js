@@ -7,8 +7,12 @@ const modalMenu = () => {
     const closeBurgerBtn = document.querySelector('.menu__close-burger');
 
     const modalFeedback = document.querySelector('.main-content__modal-feedback');
-    const openFeedback = document.querySelectorAll('.feedback-btn');
-    const closeFeedback = document.querySelector('.modal__close-feedback');
+    const openFeedbackBtn = document.querySelectorAll('.feedback-btn');
+    const closeFeedbackBtn = document.querySelector('.modal__close-feedback');
+
+    const modalCall = document.querySelector('.main-content__modal-call');
+    const openCallBtn = document.querySelectorAll('.call-btn');
+    const closeCallBtn = document.querySelector('.modal__close-call');
 
     // Функция высчитывает отступ равный скроллу браузера;
 
@@ -56,7 +60,7 @@ const modalMenu = () => {
 
     // Feedback events;
 
-    for(let btn of openFeedback) {
+    for(let btn of openFeedbackBtn) {
         btn.addEventListener('click', () => {
             openMenu(modalFeedback, 'modal_open', 'modal_active_false');
             activeOverlay();
@@ -66,8 +70,25 @@ const modalMenu = () => {
         });
     }
     
-    closeFeedback.addEventListener('click', () => {
+    closeFeedbackBtn.addEventListener('click', () => {
         closeMenu(modalFeedback, 'modal_open', 'modal_close', 'modal_active_false');
+        deActiveOverlay();
+    });
+
+    // Call events;
+
+    for(let btn of openCallBtn) {
+        btn.addEventListener('click', () => {
+            openMenu(modalCall, 'modal_open', 'modal_active_false');
+            activeOverlay();
+            if(document.documentElement.clientWidth < 1366) {
+                closeMenu(burgerMenu, 'menu_open', 'menu_close', 'menu_active_false');
+            }      
+        });
+    }
+    
+    closeCallBtn.addEventListener('click', () => {
+        closeMenu(modalCall, 'modal_open', 'modal_close', 'modal_active_false');
         deActiveOverlay();
     });
 
@@ -78,6 +99,7 @@ const modalMenu = () => {
             closeMenu(burgerMenu, 'menu_open', 'menu_close', 'menu_active_false');
         }
         closeMenu(modalFeedback, 'modal_open', 'modal_close', 'modal_active_false');
+        closeMenu(modalCall, 'modal_open', 'modal_close', 'modal_active_false');
         deActiveOverlay();
 
     })
