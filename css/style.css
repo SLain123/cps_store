@@ -1129,6 +1129,93 @@ button.swiper-pagination-bullet {
     left: 110%;
     background-image: url("../img/icon/goside.svg"); }
 
+.btn__animate-call:hover {
+  -webkit-animation: btn-call .4s ease-in 5 alternate forwards;
+          animation: btn-call .4s ease-in 5 alternate forwards; }
+
+.btn__animate-call:focus {
+  border-radius: 50px; }
+
+.btn__animate-chat:hover {
+  -webkit-animation: btn-chat .7s ease-in 3 alternate forwards;
+          animation: btn-chat .7s ease-in 3 alternate forwards; }
+
+.btn__animate-chat:focus {
+  border-radius: 50px; }
+
+.btn__animate-cyrcle:hover {
+  -webkit-animation: btn-cyrcle .7s ease-in forwards;
+          animation: btn-cyrcle .7s ease-in forwards; }
+
+.btn__animate-cyrcle:focus {
+  border-radius: 50px; }
+
+@-webkit-keyframes btn-call {
+  from {
+    -webkit-transform: scale(1) rotate(45deg);
+            transform: scale(1) rotate(45deg); }
+  to {
+    -webkit-transform: scale(1.1) rotate(-45deg);
+            transform: scale(1.1) rotate(-45deg); } }
+
+@keyframes btn-call {
+  from {
+    -webkit-transform: scale(1) rotate(45deg);
+            transform: scale(1) rotate(45deg); }
+  to {
+    -webkit-transform: scale(1.1) rotate(-45deg);
+            transform: scale(1.1) rotate(-45deg); } }
+
+@-webkit-keyframes btn-chat {
+  from {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); }
+  25% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg); }
+  50% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); }
+  75% {
+    -webkit-transform: scale(1.1) rotate(-15deg);
+            transform: scale(1.1) rotate(-15deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); } }
+
+@keyframes btn-chat {
+  from {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); }
+  25% {
+    -webkit-transform: scale(1.1) rotate(15deg);
+            transform: scale(1.1) rotate(15deg); }
+  50% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); }
+  75% {
+    -webkit-transform: scale(1.1) rotate(-15deg);
+            transform: scale(1.1) rotate(-15deg); }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg); } }
+
+@-webkit-keyframes btn-cyrcle {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes btn-cyrcle {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 .arrow-expand {
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -1599,7 +1686,9 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.2px;
   max-height: 104px;
   overflow-y: hidden;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease; }
   .info__text p:first-child {
     margin: 0; }
   @media (min-width: 768px) {
@@ -1609,7 +1698,7 @@ button.swiper-pagination-bullet {
       margin-bottom: 20px; } }
   @media (min-width: 1366px) {
     .info__text {
-      max-height: 295px; } }
+      max-height: 190px; } }
 
 .info__expand {
   margin-bottom: 16px; }
@@ -1630,6 +1719,10 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
   .info__pic-img {
     border-radius: 6px; } }
+
+.info__text_expand {
+  height: auto;
+  max-height: 600px; }
 
 .card {
   min-height: 196px; }
@@ -2007,7 +2100,9 @@ button.swiper-pagination-bullet {
       padding: 32px 24px 41px 24px; } }
   @media (min-width: 1120px) {
     .footer {
-      padding: 32px 31px 21px 31px;
+      padding: 32px 31px 21px 31px; } }
+  @media (min-width: 1366px) {
+    .footer {
       width: 1040px; } }
   .footer__text {
     text-align: center;
