@@ -1,31 +1,38 @@
 import Swiper, { Pagination } from 'swiper';
 
+const displayAllInfoBtn = document.querySelector('#info-exp-btn');
+const displayAllInfoText = document.querySelector('#info-exp-text');
 const displayAllBrandsBtn = document.querySelector('#brands-exp-btn');
 const displayAllBrandsText = document.querySelector('#brands-exp-text');
 const displayAllTypesBtn = document.querySelector('#types-exp-btn');
 const displayAlltypesText = document.querySelector('#types-exp-text');
+const infoBlock = document.querySelector('#info-content');
 const brandsBlock = document.querySelector('#brands-content');
 const typesBlock = document.querySelector('#types-content');
 
-const expandBlock = (parentBlock, text, className) => {
+const expandBlock = (parentBlock, textBlock, className, openText = 'Показать все', closeText = 'Скрыть') => {
     if (parentBlock.classList.contains(className)) {
         parentBlock.classList.remove(className);
-        text.innerText = 'Показать все';
-        text.classList.add('arrow-expand__text');
-        text.classList.remove(
+        textBlock.innerText = openText;
+        textBlock.classList.add('arrow-expand__text');
+        textBlock.classList.remove(
             'arrow-expand__text_arrow_transform',
         );
     } else {
         parentBlock.classList.add(className);
-        text.innerText = 'Скрыть';
-        text.classList.remove('arrow-expand__text');
-        text.classList.add(
+        textBlock.innerText = closeText;
+        textBlock.classList.remove('arrow-expand__text');
+        textBlock.classList.add(
             'arrow-expand__text_arrow_transform',
         );
     }
 };
 
 // Events;
+
+displayAllInfoBtn.addEventListener('click', () => {
+    expandBlock(infoBlock, displayAllInfoText, 'info__text_expand', 'Читать далее');
+})
 
 displayAllBrandsBtn.addEventListener('click', () => {
     expandBlock(brandsBlock, displayAllBrandsText, 'card__expand-btn_expand');

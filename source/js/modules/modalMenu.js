@@ -101,7 +101,17 @@ const modalMenu = () => {
         closeMenu(modalFeedback, 'modal_open', 'modal_close', 'modal_active_false');
         closeMenu(modalCall, 'modal_open', 'modal_close', 'modal_active_false');
         deActiveOverlay();
+    })
 
+    // Resize event
+
+    window.addEventListener('resize', () => {
+        if(document.documentElement.clientWidth < 1366) {
+            closeMenu(burgerMenu, 'menu_open', 'menu_close', 'menu_active_false');
+        }
+        closeMenu(modalFeedback, 'modal_open', 'modal_close', 'modal_active_false');
+        closeMenu(modalCall, 'modal_open', 'modal_close', 'modal_active_false');
+        deActiveOverlay();
     })
 };
 

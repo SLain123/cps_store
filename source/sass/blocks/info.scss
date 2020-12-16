@@ -78,6 +78,7 @@
         max-height: 104px;
         overflow-y: hidden;
         margin-bottom: 16px;
+        transition: 1.5s ease;
 
         & p:first-child {
             margin: 0;
@@ -90,7 +91,7 @@
         }
 
         @include w-1366 {
-            max-height: 295px;
+            max-height: 190px;
         }
     }
 
@@ -125,5 +126,14 @@
         @include w-768 {
             border-radius: 6px;
         }
+    }
+
+    // Модификаторы =======================
+
+    // .info__text_expand
+
+    &__text_expand {
+        height: auto;
+        max-height: 600px;
     }
 }

@@ -92,4 +92,76 @@
             background-image: url('../img/icon/goside.svg');
         }
     }
+
+    // .btn__animate-call
+
+    &__animate-call {
+        &:hover {
+            animation: btn-call .4s ease-in 5 alternate forwards;
+        }
+
+        &:focus {
+            border-radius: 50px;
+        }
+    }
+
+    // .btn__animate-chat
+
+    &__animate-chat {
+        &:hover {
+            animation: btn-chat .7s ease-in 3 alternate forwards;
+        }
+
+        &:focus {
+            border-radius: 50px;
+        }
+    }
+
+    // .btn__animate-cyrcle
+
+    &__animate-cyrcle {
+        &:hover {
+            animation: btn-cyrcle .7s ease-in forwards;
+        }
+
+        &:focus {
+            border-radius: 50px;
+        }
+    }
+}
+
+@keyframes btn-call {
+    from {
+		transform: scale(1) rotate(45deg);
+	}
+	to {
+		transform: scale(1.1) rotate(-45deg);
+	}
+}
+
+@keyframes btn-chat {
+    from {
+		transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(15deg);
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+	75% {
+		transform: scale(1.1) rotate(-15deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes btn-cyrcle {
+    from {
+		transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
