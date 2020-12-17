@@ -2,30 +2,30 @@
 
 @mixin w-1366 {
     @media (min-width: $mon) {
-      @content;
+        @content;
     }
-  }
-  
-  @mixin w-1120 {
+}
+
+@mixin w-1120 {
     @media (min-width: $s-mon) {
-      @content;
+        @content;
     }
-  }
-  
-  @mixin w-768 {
+}
+
+@mixin w-768 {
     @media (min-width: $tb) {
-      @content;
+        @content;
     }
-  }
-  
-  @mixin w-320 {
+}
+
+@mixin w-320 {
     @media (max-width: $mob) {
-      @content;
+        @content;
     }
-  }
-  
-  @mixin retina {
+}
+
+@mixin retina {
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      @content;
+        @content;
     }
-  }
+}

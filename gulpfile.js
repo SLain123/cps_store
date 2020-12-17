@@ -17,10 +17,35 @@ const webpackConfig = require(`./webpack.config.js`);
 const concat = require(`gulp-concat`);
 const fileinclude = require(`gulp-file-include`);
 const ghPages = require('gulp-gh-pages');
+const stylelint = require('gulp-stylelint');
  
 gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
+});
+
+gulp.task('test-scss', function() {
+  return gulp.src(`source/**/*.scss`).
+    pipe(stylelint({
+      reporters: [
+        {
+          failAfterError: true,
+          formatter: 'string',
+          console: true,
+        },
+      ],
+    }));
+});
+
+gulp.task('fix-scss', function fixCssTask() {
+  const gulpStylelint = require('gulp-stylelint');
+ 
+  return gulp
+    .src(`source/**/*.scss`)
+    .pipe(gulpStylelint({
+      fix: true
+    }))
+    .pipe(gulp.dest(`source`));
 });
 
 gulp.task(`html`, function () {

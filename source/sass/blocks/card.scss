@@ -11,7 +11,7 @@
 
     &__title-block {
         width: 100%;
-        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
         border-top: $blue-extra-border 1px solid;
         padding: 16px;
 
@@ -136,15 +136,10 @@
         background-color: $grey-bullets-active;
     }
 
-    // .card__item-logo
-
-    &__item-logo {
-    }
-
     // .card__detail-btn
 
     &__detail-btn {
-        opacity: .9;
+        opacity: 0.9;
 
         &:focus {
             outline: none;
@@ -177,11 +172,11 @@
 
     //Разворот для блоков:
 
-    // .card__expand-btn_expand 
+    // .card__expand-btn_expand
 
     &__expand-btn_expand {
         height: 370px;
-        
+
         @include w-1120 {
             height: 290px;
         }
@@ -191,7 +186,7 @@
 
     &__expand-btn_expand_wide {
         height: 570px;
-        
+
         @include w-1120 {
             height: 380px;
         }

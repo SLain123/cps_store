@@ -6,7 +6,7 @@
     background-color: $white;
     padding: 16px;
     flex-flow: column;
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
     z-index: 10;
     overflow-y: auto;
     position: absolute;
@@ -34,11 +34,6 @@
             left: -72px;
             margin-left: 0;
         }
-    }
-
-    // .modal__close-pic
-
-    &__close-pic {
     }
 
     // .modal__title
@@ -72,7 +67,8 @@
         display: flex;
         flex-flow: column;
 
-        & input, textarea {
+        & input,
+        textarea {
             border: 1px solid $light-grey;
             border-radius: 8px;
             width: 100%;
@@ -131,13 +127,13 @@
         width: 100%;
         display: flex;
         overflow-x: visible;
-        animation: open-menu-anim .5s linear;
+        animation: open-menu-anim 0.5s linear;
     }
 
     // .modal_close
 
     &_close {
-        animation: close-menu-anim .5s ease;
+        animation: close-menu-anim 0.5s ease;
         overflow-x: hidden;
         display: flex;
     }

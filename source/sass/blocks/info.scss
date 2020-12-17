@@ -1,5 +1,4 @@
 .info {
-
     // .info__container
 
     &__container {
@@ -22,8 +21,8 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
 
-        &::-webkit-scrollbar { 
-            width: 0; 
+        &::-webkit-scrollbar {
+            width: 0;
         }
 
         @include w-1366 {
@@ -47,7 +46,7 @@
         background-color: $transparent;
         border: none;
         cursor: pointer;
-        opacity: .9;
+        opacity: 0.9;
         margin: 1px;
 
         &:hover {
@@ -62,7 +61,6 @@
     // .info__content-item
 
     &__content-item {
-
         @include w-768 {
             display: flex;
             margin-top: 17px;

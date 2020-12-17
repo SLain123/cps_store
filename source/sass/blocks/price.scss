@@ -1,4 +1,4 @@
-// main ../style.scss 
+// main ../style.scss
 
 .price {
     padding-bottom: 40px;
@@ -7,7 +7,7 @@
 
     &__content-block {
         min-height: 245px;
-        
+
         @include w-768 {
             min-height: 370px;
             flex-flow: column;
@@ -79,7 +79,7 @@
 
             @include w-768 {
                 position: absolute;
-                top: -30px
+                top: -30px;
             }
         }
 
@@ -113,7 +113,7 @@
 
             @include w-768 {
                 position: absolute;
-                top: -30px
+                top: -30px;
             }
         }
 
@@ -139,7 +139,7 @@
 
             @include w-768 {
                 position: absolute;
-                top: -30px
+                top: -30px;
             }
         }
 
@@ -162,18 +162,11 @@
         }
     }
 
-    // .price__order-text
-
-    &__order-text {
-        
-    }
-
     // Модификаторы ==================================
 
     // .price__text_hidden-on-mon-tab
 
     &__text_hidden-on-mon-tab {
-
         &::before {
             @include w-768 {
                 display: none;

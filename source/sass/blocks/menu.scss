@@ -5,7 +5,7 @@
     padding: 16px 0;
     flex-flow: column;
     justify-content: space-between;
-    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
     z-index: 10;
     overflow-y: auto;
 
@@ -16,11 +16,6 @@
     @include w-1366 {
         box-shadow: none;
         z-index: 1;
-    }
-
-    // .menu__head
-
-    &__head {
     }
 
     // .menu__footer
@@ -42,15 +37,9 @@
     // .menu__close-burger
 
     &__close-burger {
-
         @include w-1366 {
             display: none;
         }
-    }
-
-    // .menu__close-burger-btn
-
-    &__close-burger-btn {
     }
 
     // .menu__logo
@@ -60,27 +49,12 @@
         margin-left: 8px;
     }
 
-    // .menu__search-btn
-
-    &__search-btn {
-    }
-
-    // .menu__search-pic
-
-    &__search-pic {
-    }
-
     // .menu__list
 
     &__list {
         list-style: none;
         padding: 0;
         margin: 24px 0;
-    }
-
-    // .menu__item 
-
-    &__item {  
     }
 
     // .menu__link
@@ -96,7 +70,7 @@
         color: $black;
 
         &:hover {
-            opacity: .9;
+            opacity: 0.9;
         }
     }
 
@@ -129,7 +103,7 @@
         color: $black;
 
         &:hover {
-            opacity: .9;
+            opacity: 0.9;
         }
     }
 
@@ -145,7 +119,7 @@
         margin-top: 12px;
 
         &:hover {
-            opacity: .9;
+            opacity: 0.9;
         }
     }
 
@@ -173,7 +147,7 @@
         }
 
         &:hover {
-            opacity: .9;
+            opacity: 0.9;
         }
     }
 
@@ -187,26 +161,21 @@
         right: 0;
     }
 
-    // .menu__search-btn
-
-    &__search-btn {
-    }
-
     //==================================================
     // Модификаторы:
 
-    // .menu_open 
+    // .menu_open
 
     &_open {
         width: 100%;
         display: flex;
-        animation: open-menu-anim .5s linear;
+        animation: open-menu-anim 0.5s linear;
     }
 
     // .menu_close
 
     &_close {
-        animation: close-menu-anim .5s ease;
+        animation: close-menu-anim 0.5s ease;
         display: flex;
     }
 
@@ -254,7 +223,7 @@
     5% {
         display: flex;
     }
-    
+
     100% {
         width: 100%;
     }

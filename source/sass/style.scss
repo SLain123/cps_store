@@ -1,33 +1,33 @@
 // Artem Lamzov
 // Created: 02.12.20
-// Finished: 
+// Finished:
 
 // Common styles
 
-@import "vars";
-@import "./vendor/normalize";
-@import "reset";
-@import "mixins";
-@import "container";
-@import "service";
-@import "./vendor/swiper";
+@import 'vars';
+@import './vendor/normalize';
+@import 'reset';
+@import 'mixins';
+@import 'container';
+@import 'service';
+@import './vendor/swiper';
 
 // main blocks
 
-@import "./blocks/btn";
-@import "./blocks/arrow-expand";
-@import "./blocks/header";
-@import "./blocks/menu";
-@import "./blocks/overlay";
-@import "./blocks/main-contant";
-@import "./blocks/about";
-@import "./blocks/info";
-@import "./blocks/card";
-@import "./blocks/price";
-@import "./blocks/footnote";
-@import "./blocks/footer";
-@import "./blocks/modal";
+@import './blocks/btn';
+@import './blocks/arrow-expand';
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/overlay';
+@import './blocks/main-contant';
+@import './blocks/about';
+@import './blocks/info';
+@import './blocks/card';
+@import './blocks/price';
+@import './blocks/footnote';
+@import './blocks/footer';
+@import './blocks/modal';
 
 // other
 
-@import "./fonts";
+@import './fonts';

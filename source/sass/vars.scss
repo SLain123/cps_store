@@ -1,21 +1,21 @@
 // main: style.scss
 
 //colors
-$black: #1B1C21;
-$blue-main: #41F6D7;
-$blue-border: #B8FFEC;
-$blue-extra-border: #D9FFF5;
-$grey: #7E7E82;
-$light-grey: #EAEAEA;
-$main-bg: #F8F8F8;
-$raspberry-bg: #FF3E79;
-$white: #FFFFFF;
+$black: #1b1c21;
+$blue-main: #41f6d7;
+$blue-border: #b8ffec;
+$blue-extra-border: #d9fff5;
+$grey: #7e7e82;
+$light-grey: #eaeaea;
+$main-bg: #f8f8f8;
+$raspberry-bg: #ff3e79;
+$white: #ffffff;
 $transparent: rgba(0, 0, 0, 0);
-$grey-bullets: #DDDDDD;
-$grey-bullets-active: #B5B6BC;
+$grey-bullets: #dddddd;
+$grey-bullets-active: #b5b6bc;
 
 //fonts
-$lakes: "TTLakes", "Arial", "sans-serif";
+$lakes: 'TTLakes', 'Arial', 'sans-serif';
 
 //viewports
 
@@ -31,9 +31,8 @@ $retina-dppx: 1.5dppx;
 
 // timers
 
-
 // Animation
 $t-anim: 0.3s;
 
-$default-transition-settings:       0.3s ease;
-$modal-transition-settings:         0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$default-transition-settings: 0.3s ease;
+$modal-transition-settings: 0.6s cubic-bezier(0.55, 0, 0.1, 1);

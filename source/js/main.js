@@ -1,4 +1,4 @@
-import { polyfills } from './utils/polyfills';
+import {polyfills} from './utils/polyfills';
 import modalMenu from './modules/modalMenu';
 import brandTypeSlider from './modules/brands&types';
 

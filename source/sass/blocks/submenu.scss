@@ -2,7 +2,7 @@
 
 .submenu {
     display: flex;
-    
+
     @include w-768 {
         align-items: center;
     }
@@ -10,15 +10,4 @@
     @include w-1366 {
         display: none;
     }
-
-    // .submenu__btn
-
-    &__btn {
-    }
-    
-    // .submenu-pic
-    
-    &__pic {
-    }
 }
-

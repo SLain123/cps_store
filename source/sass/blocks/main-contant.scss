@@ -3,19 +3,8 @@
 .main-content {
     background-color: $main-bg;
     padding-top: 24px;
-    
+
     @include w-1366 {
         width: 1040px;
     }
-
-    // .main-content__brands
-
-    &__brands {
-    }
-
-    // .main-content__types
-
-    &__types {
-    }
-    
 }
